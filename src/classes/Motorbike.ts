@@ -59,11 +59,12 @@ class Motorbike extends Vehicle{
   // TODO: The method should call the printDetails method of the parent class
   // TODO: The method should log the details of the Motorbike
   // TODO: The details should include the VIN, make, model, year, weight, top speed, color, and wheels
+  
   override printDetails(): void {
-    // Call the printDetails method of the parent class, Vehicle
+    
     super.printDetails();
 
-    // Print details of the Car class
+    
     console.log(`VIN: ${this.vin}`);
     console.log(`Color: ${this.color}`);
     console.log(`Make: ${this.make}`);
@@ -72,7 +73,7 @@ class Motorbike extends Vehicle{
     console.log(`Weight: ${this.weight} lbs`);
     console.log(`Top Speed: ${this.topSpeed} mph`);
 
-    // Print details of the wheels
+    
     console.log(
       `Wheel 1: ${this.wheels[0].getDiameter} inch with a ${this.wheels[0].getTireBrand} tire`
     );
