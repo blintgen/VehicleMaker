@@ -14,7 +14,7 @@ class Motorbike extends Vehicle{
   year: number
   weight: number
   topSpeed: number
-  wheels: [Wheel, Wheel]
+  wheels: Wheel[]
 
   
   // TODO: Create a constructor that accepts the properties of the Motorbike class
@@ -29,7 +29,7 @@ class Motorbike extends Vehicle{
     year: number,
     weight: number,
     topSpeed: number,
-    wheels: [Wheel, Wheel]
+    wheels: Wheel[]
   ) {
     super()
 
@@ -59,7 +59,7 @@ class Motorbike extends Vehicle{
   // TODO: The method should call the printDetails method of the parent class
   // TODO: The method should log the details of the Motorbike
   // TODO: The details should include the VIN, make, model, year, weight, top speed, color, and wheels
-  
+
   override printDetails(): void {
     
     super.printDetails();
